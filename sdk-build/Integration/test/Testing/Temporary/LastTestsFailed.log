@@ -1,0 +1,8 @@
+1:AlexaAuthorizationDelegateTest
+2:AlexaCommunicationsLibraryTest
+3:AlexaDirectiveSequencerLibraryTest
+4:AudioInputProcessorIntegrationTest
+5:ServerDisconnectIntegrationTest
+6:SpeechSynthesizerIntegrationTest
+7:AlertsIntegrationTest
+8:AudioPlayerIntegrationTest

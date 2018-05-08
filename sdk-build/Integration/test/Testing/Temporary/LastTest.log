@@ -1,0 +1,1520 @@
+Start testing: May 07 11:08 PDT
+----------------------------------------------------------
+1/8 Testing: AlexaAuthorizationDelegateTest
+1/8 Test: AlexaAuthorizationDelegateTest
+Command: "/home/wma/sdk-folder/sdk-build/Integration/test/AlexaAuthorizationDelegateTest" "/home/wma/sdk-folder/sdk-build/Integration/AlexaClientSDKConfig.json" "/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/inputs"
+Directory: /home/wma/sdk-folder/sdk-build/Integration/test
+"AlexaAuthorizationDelegateTest" start time: May 07 11:08 PDT
+Output:
+----------------------------------------------------------
+2018-05-07 18:08:42.110 [  1] I sdkVersion: 1.7.1
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from AlexaAuthorizationDelegateTest
+[ RUN      ] AlexaAuthorizationDelegateTest.refreshAuthToken
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:51: Failure
+Value of: true
+  Actual: true
+Expected: false
+FATAL ERROR: Authorization required before running integration test
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaAuthorizationDelegateTest.cpp:78: Failure
+Value of: authObserver->waitFor(AuthObserver::State::REFRESHED, TIME_OUT)
+  Actual: false
+Expected: true
+Refreshing the auth token timed out.
+2018-05-07 18:09:42.116 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+[  FAILED  ] AlexaAuthorizationDelegateTest.refreshAuthToken (60006 ms)
+[ RUN      ] AlexaAuthorizationDelegateTest.invalidClientIdWithUnrecoverableError
+2018-05-07 18:09:42.656 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+[       OK ] AlexaAuthorizationDelegateTest.invalidClientIdWithUnrecoverableError (539 ms)
+[----------] 2 tests from AlexaAuthorizationDelegateTest (60545 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (60545 ms total)
+[  PASSED  ] 1 test.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] AlexaAuthorizationDelegateTest.refreshAuthToken
+
+ 1 FAILED TEST
+<end of output>
+Test time =  60.55 sec
+----------------------------------------------------------
+Test Failed.
+"AlexaAuthorizationDelegateTest" end time: May 07 11:09 PDT
+"AlexaAuthorizationDelegateTest" time elapsed: 00:01:00
+----------------------------------------------------------
+
+2/8 Testing: AlexaCommunicationsLibraryTest
+2/8 Test: AlexaCommunicationsLibraryTest
+Command: "/home/wma/sdk-folder/sdk-build/Integration/test/AlexaCommunicationsLibraryTest" "/home/wma/sdk-folder/sdk-build/Integration/AlexaClientSDKConfig.json" "/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/inputs"
+Directory: /home/wma/sdk-folder/sdk-build/Integration/test
+"AlexaCommunicationsLibraryTest" start time: May 07 11:09 PDT
+Output:
+----------------------------------------------------------
+2018-05-07 18:09:42.666 [  1] I sdkVersion: 1.7.1
+[==========] Running 10 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 10 tests from AlexaCommunicationsLibraryTest
+[ RUN      ] AlexaCommunicationsLibraryTest.testConnectAndDisconnect
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:51: Failure
+Value of: true
+  Actual: true
+Expected: false
+FATAL ERROR: Authorization required before running integration test
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:87: Failure
+Value of: m_connectionStatusObserver->waitFor(ConnectionStatusObserverInterface::Status::CONNECTED)
+  Actual: false
+Expected: true
+Connecting timed out
+[  FAILED  ] AlexaCommunicationsLibraryTest.testConnectAndDisconnect (15007 ms)
+[ RUN      ] AlexaCommunicationsLibraryTest.testSendEvent
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:51: Failure
+Value of: true
+  Actual: true
+Expected: false
+FATAL ERROR: Authorization required before running integration test
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:87: Failure
+Value of: m_connectionStatusObserver->waitFor(ConnectionStatusObserverInterface::Status::CONNECTED)
+  Actual: false
+Expected: true
+Connecting timed out
+[  FAILED  ] AlexaCommunicationsLibraryTest.testSendEvent (15007 ms)
+[ RUN      ] AlexaCommunicationsLibraryTest.testSendInvalidEvent
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:51: Failure
+Value of: true
+  Actual: true
+Expected: false
+FATAL ERROR: Authorization required before running integration test
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:87: Failure
+Value of: m_connectionStatusObserver->waitFor(ConnectionStatusObserverInterface::Status::CONNECTED)
+  Actual: false
+Expected: true
+Connecting timed out
+2018-05-07 18:10:27.686 [  2] E PostConnectSynchronizer:stateTransitionNotAllowed:from=STOPPING,to=SENDING
+[  FAILED  ] AlexaCommunicationsLibraryTest.testSendInvalidEvent (15009 ms)
+[ RUN      ] AlexaCommunicationsLibraryTest.testSendEventWithAttachment
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:51: Failure
+Value of: true
+  Actual: true
+Expected: false
+FATAL ERROR: Authorization required before running integration test
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:87: Failure
+Value of: m_connectionStatusObserver->waitFor(ConnectionStatusObserverInterface::Status::CONNECTED)
+  Actual: false
+Expected: true
+Connecting timed out
+[  FAILED  ] AlexaCommunicationsLibraryTest.testSendEventWithAttachment (15011 ms)
+[ RUN      ] AlexaCommunicationsLibraryTest.testSendEventAndReceiveDirective
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:51: Failure
+Value of: true
+  Actual: true
+Expected: false
+FATAL ERROR: Authorization required before running integration test
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:87: Failure
+Value of: m_connectionStatusObserver->waitFor(ConnectionStatusObserverInterface::Status::CONNECTED)
+  Actual: false
+Expected: true
+Connecting timed out
+[  FAILED  ] AlexaCommunicationsLibraryTest.testSendEventAndReceiveDirective (15008 ms)
+[ RUN      ] AlexaCommunicationsLibraryTest.testSendEventsSerially
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:51: Failure
+Value of: true
+  Actual: true
+Expected: false
+FATAL ERROR: Authorization required before running integration test
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:87: Failure
+Value of: m_connectionStatusObserver->waitFor(ConnectionStatusObserverInterface::Status::CONNECTED)
+  Actual: false
+Expected: true
+Connecting timed out
+[  FAILED  ] AlexaCommunicationsLibraryTest.testSendEventsSerially (15008 ms)
+[ RUN      ] AlexaCommunicationsLibraryTest.testSendEventsConcurrently
+2018-05-07 18:11:12.716 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.716 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.716 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaCommunicationsLibraryTest.cpp:185: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaCommunicationsLibraryTest.testSendEventsConcurrently (0 ms)
+[ RUN      ] AlexaCommunicationsLibraryTest.testReceiveDirectiveOnDownchannel
+2018-05-07 18:11:12.717 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.717 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.717 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaCommunicationsLibraryTest.cpp:185: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaCommunicationsLibraryTest.testReceiveDirectiveOnDownchannel (1 ms)
+[ RUN      ] AlexaCommunicationsLibraryTest.testPersistentConnection
+2018-05-07 18:11:12.717 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.717 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.718 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaCommunicationsLibraryTest.cpp:185: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaCommunicationsLibraryTest.testPersistentConnection (1 ms)
+[ RUN      ] AlexaCommunicationsLibraryTest.testMultipleConnectionStatusObservers
+2018-05-07 18:11:12.718 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.718 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.718 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaCommunicationsLibraryTest.cpp:185: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaCommunicationsLibraryTest.testMultipleConnectionStatusObservers (0 ms)
+[----------] 10 tests from AlexaCommunicationsLibraryTest (90052 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test case ran. (90052 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 10 tests, listed below:
+[  FAILED  ] AlexaCommunicationsLibraryTest.testConnectAndDisconnect
+[  FAILED  ] AlexaCommunicationsLibraryTest.testSendEvent
+[  FAILED  ] AlexaCommunicationsLibraryTest.testSendInvalidEvent
+[  FAILED  ] AlexaCommunicationsLibraryTest.testSendEventWithAttachment
+[  FAILED  ] AlexaCommunicationsLibraryTest.testSendEventAndReceiveDirective
+[  FAILED  ] AlexaCommunicationsLibraryTest.testSendEventsSerially
+[  FAILED  ] AlexaCommunicationsLibraryTest.testSendEventsConcurrently
+[  FAILED  ] AlexaCommunicationsLibraryTest.testReceiveDirectiveOnDownchannel
+[  FAILED  ] AlexaCommunicationsLibraryTest.testPersistentConnection
+[  FAILED  ] AlexaCommunicationsLibraryTest.testMultipleConnectionStatusObservers
+
+10 FAILED TESTS
+<end of output>
+Test time =  90.06 sec
+----------------------------------------------------------
+Test Failed.
+"AlexaCommunicationsLibraryTest" end time: May 07 11:11 PDT
+"AlexaCommunicationsLibraryTest" time elapsed: 00:01:30
+----------------------------------------------------------
+
+3/8 Testing: AlexaDirectiveSequencerLibraryTest
+3/8 Test: AlexaDirectiveSequencerLibraryTest
+Command: "/home/wma/sdk-folder/sdk-build/Integration/test/AlexaDirectiveSequencerLibraryTest" "/home/wma/sdk-folder/sdk-build/Integration/AlexaClientSDKConfig.json" "/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/inputs"
+Directory: /home/wma/sdk-folder/sdk-build/Integration/test
+"AlexaDirectiveSequencerLibraryTest" start time: May 07 11:11 PDT
+Output:
+----------------------------------------------------------
+2018-05-07 18:11:12.727 [  1] I sdkVersion: 1.7.1
+[==========] Running 14 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 14 tests from AlexaDirectiveSequencerLibraryTest
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.sendEventWithDirective
+2018-05-07 18:11:12.728 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.728 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.728 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.sendEventWithDirective (0 ms)
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.sendDirectiveGroupWithoutBlocking
+2018-05-07 18:11:12.728 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.728 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.728 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.sendDirectiveGroupWithoutBlocking (0 ms)
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.sendDirectiveWithDifferentDialogRequestID
+2018-05-07 18:11:12.728 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.728 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.728 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.sendDirectiveWithDifferentDialogRequestID (0 ms)
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.dropQueueAfterBargeIn
+2018-05-07 18:11:12.728 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.728 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.728 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.dropQueueAfterBargeIn (0 ms)
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.sendDirectiveWithoutADialogRequestID
+2018-05-07 18:11:12.729 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.729 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.729 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.sendDirectiveWithoutADialogRequestID (1 ms)
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.sendDirectivesForPreHandling
+2018-05-07 18:11:12.729 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.729 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.729 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.sendDirectivesForPreHandling (0 ms)
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.cancelDirectivesWhileInQueue
+2018-05-07 18:11:12.729 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.729 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.729 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.cancelDirectivesWhileInQueue (0 ms)
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.oneBlockingDirectiveAtTheFront
+2018-05-07 18:11:12.729 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.729 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.729 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.oneBlockingDirectiveAtTheFront (0 ms)
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.oneBlockingDirectiveInTheMiddle
+2018-05-07 18:11:12.729 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.729 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.729 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.oneBlockingDirectiveInTheMiddle (0 ms)
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.noDirectiveHandlerRegisteredForADirectiveAtTheFront
+2018-05-07 18:11:12.730 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.730 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.730 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.noDirectiveHandlerRegisteredForADirectiveAtTheFront (1 ms)
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.noDirectiveHandlerRegisteredForADirectiveInTheMiddle
+2018-05-07 18:11:12.730 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.730 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.730 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.noDirectiveHandlerRegisteredForADirectiveInTheMiddle (0 ms)
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.twoDirectiveHandlersRegisteredForADirective
+2018-05-07 18:11:12.730 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.730 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.730 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.twoDirectiveHandlersRegisteredForADirective (0 ms)
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.multiturnScenario
+2018-05-07 18:11:12.730 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.730 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.730 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.multiturnScenario (0 ms)
+[ RUN      ] AlexaDirectiveSequencerLibraryTest.getAttachmentWithContentId
+2018-05-07 18:11:12.730 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.730 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.730 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlexaDirectiveSequencerLibraryTest.cpp:235: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.getAttachmentWithContentId (0 ms)
+[----------] 14 tests from AlexaDirectiveSequencerLibraryTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 1 test case ran. (2 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 14 tests, listed below:
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.sendEventWithDirective
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.sendDirectiveGroupWithoutBlocking
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.sendDirectiveWithDifferentDialogRequestID
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.dropQueueAfterBargeIn
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.sendDirectiveWithoutADialogRequestID
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.sendDirectivesForPreHandling
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.cancelDirectivesWhileInQueue
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.oneBlockingDirectiveAtTheFront
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.oneBlockingDirectiveInTheMiddle
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.noDirectiveHandlerRegisteredForADirectiveAtTheFront
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.noDirectiveHandlerRegisteredForADirectiveInTheMiddle
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.twoDirectiveHandlersRegisteredForADirective
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.multiturnScenario
+[  FAILED  ] AlexaDirectiveSequencerLibraryTest.getAttachmentWithContentId
+
+14 FAILED TESTS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"AlexaDirectiveSequencerLibraryTest" end time: May 07 11:11 PDT
+"AlexaDirectiveSequencerLibraryTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/8 Testing: AudioInputProcessorIntegrationTest
+4/8 Test: AudioInputProcessorIntegrationTest
+Command: "/home/wma/sdk-folder/sdk-build/Integration/test/AudioInputProcessorIntegrationTest" "/home/wma/sdk-folder/sdk-build/Integration/AlexaClientSDKConfig.json" "/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/inputs"
+Directory: /home/wma/sdk-folder/sdk-build/Integration/test
+"AudioInputProcessorIntegrationTest" start time: May 07 11:11 PDT
+Output:
+----------------------------------------------------------
+2018-05-07 18:11:12.740 [  1] I sdkVersion: 1.7.1
+[==========] Running 13 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 13 tests from AudioInputProcessorTest
+[ RUN      ] AudioInputProcessorTest.tapToTalkTimeOpus
+2018-05-07 18:11:12.741 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.741 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.741 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioInputProcessorIntegrationTest.cpp:377: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioInputProcessorTest.tapToTalkTimeOpus (0 ms)
+[ RUN      ] AudioInputProcessorTest.tapToTalkSilence
+2018-05-07 18:11:12.741 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.741 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.741 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioInputProcessorIntegrationTest.cpp:377: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioInputProcessorTest.tapToTalkSilence (0 ms)
+[ RUN      ] AudioInputProcessorTest.tapToTalkNoAudio
+2018-05-07 18:11:12.741 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.741 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.741 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioInputProcessorIntegrationTest.cpp:377: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioInputProcessorTest.tapToTalkNoAudio (0 ms)
+[ RUN      ] AudioInputProcessorTest.tapToTalkMultiturn
+2018-05-07 18:11:12.741 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.741 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.741 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioInputProcessorIntegrationTest.cpp:377: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioInputProcessorTest.tapToTalkMultiturn (0 ms)
+[ RUN      ] AudioInputProcessorTest.tapToTalkMultiturnWithoutUserResponse
+2018-05-07 18:11:12.741 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.741 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.741 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioInputProcessorIntegrationTest.cpp:377: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioInputProcessorTest.tapToTalkMultiturnWithoutUserResponse (0 ms)
+[ RUN      ] AudioInputProcessorTest.tapToTalkCancel
+2018-05-07 18:11:12.742 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.742 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.742 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioInputProcessorIntegrationTest.cpp:377: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioInputProcessorTest.tapToTalkCancel (1 ms)
+[ RUN      ] AudioInputProcessorTest.holdToTalkJoke
+2018-05-07 18:11:12.742 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.742 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.742 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioInputProcessorIntegrationTest.cpp:377: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioInputProcessorTest.holdToTalkJoke (0 ms)
+[ RUN      ] AudioInputProcessorTest.holdToTalkMultiturn
+2018-05-07 18:11:12.742 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.742 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.742 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioInputProcessorIntegrationTest.cpp:377: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioInputProcessorTest.holdToTalkMultiturn (0 ms)
+[ RUN      ] AudioInputProcessorTest.holdToTalkMultiTurnWithSilence
+2018-05-07 18:11:12.742 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.742 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.742 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioInputProcessorIntegrationTest.cpp:377: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioInputProcessorTest.holdToTalkMultiTurnWithSilence (0 ms)
+[ RUN      ] AudioInputProcessorTest.holdToTalkMultiturnWithTimeOut
+2018-05-07 18:11:12.742 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.742 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.742 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioInputProcessorIntegrationTest.cpp:377: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioInputProcessorTest.holdToTalkMultiturnWithTimeOut (0 ms)
+[ RUN      ] AudioInputProcessorTest.holdToTalkNoAudio
+2018-05-07 18:11:12.742 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.742 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.742 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioInputProcessorIntegrationTest.cpp:377: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioInputProcessorTest.holdToTalkNoAudio (0 ms)
+[ RUN      ] AudioInputProcessorTest.holdToTalkCancel
+2018-05-07 18:11:12.743 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.743 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.743 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioInputProcessorIntegrationTest.cpp:377: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioInputProcessorTest.holdToTalkCancel (1 ms)
+[ RUN      ] AudioInputProcessorTest.audioWithoutAnyTrigger
+2018-05-07 18:11:12.743 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.743 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.743 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioInputProcessorIntegrationTest.cpp:377: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioInputProcessorTest.audioWithoutAnyTrigger (0 ms)
+[----------] 13 tests from AudioInputProcessorTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 13 tests from 1 test case ran. (2 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 13 tests, listed below:
+[  FAILED  ] AudioInputProcessorTest.tapToTalkTimeOpus
+[  FAILED  ] AudioInputProcessorTest.tapToTalkSilence
+[  FAILED  ] AudioInputProcessorTest.tapToTalkNoAudio
+[  FAILED  ] AudioInputProcessorTest.tapToTalkMultiturn
+[  FAILED  ] AudioInputProcessorTest.tapToTalkMultiturnWithoutUserResponse
+[  FAILED  ] AudioInputProcessorTest.tapToTalkCancel
+[  FAILED  ] AudioInputProcessorTest.holdToTalkJoke
+[  FAILED  ] AudioInputProcessorTest.holdToTalkMultiturn
+[  FAILED  ] AudioInputProcessorTest.holdToTalkMultiTurnWithSilence
+[  FAILED  ] AudioInputProcessorTest.holdToTalkMultiturnWithTimeOut
+[  FAILED  ] AudioInputProcessorTest.holdToTalkNoAudio
+[  FAILED  ] AudioInputProcessorTest.holdToTalkCancel
+[  FAILED  ] AudioInputProcessorTest.audioWithoutAnyTrigger
+
+13 FAILED TESTS
+  YOU HAVE 1 DISABLED TEST
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"AudioInputProcessorIntegrationTest" end time: May 07 11:11 PDT
+"AudioInputProcessorIntegrationTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/8 Testing: ServerDisconnectIntegrationTest
+5/8 Test: ServerDisconnectIntegrationTest
+Command: "/home/wma/sdk-folder/sdk-build/Integration/test/ServerDisconnectIntegrationTest" "/home/wma/sdk-folder/sdk-build/Integration/AlexaClientSDKConfig.json" "/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/inputs"
+Directory: /home/wma/sdk-folder/sdk-build/Integration/test
+"ServerDisconnectIntegrationTest" start time: May 07 11:11 PDT
+Output:
+----------------------------------------------------------
+2018-05-07 18:11:12.751 [  1] I sdkVersion: 1.7.1
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from ServerDisconnectIntegrationTest
+[ RUN      ] ServerDisconnectIntegrationTest.testConnect
+2018-05-07 18:11:12.751 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.751 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.751 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/ServerDisconnectIntegrationTest.cpp:226: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+[  FAILED  ] ServerDisconnectIntegrationTest.testConnect (0 ms)
+[ RUN      ] ServerDisconnectIntegrationTest.testReConnect
+2018-05-07 18:11:12.751 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.751 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.751 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/ServerDisconnectIntegrationTest.cpp:226: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+[  FAILED  ] ServerDisconnectIntegrationTest.testReConnect (0 ms)
+[ RUN      ] ServerDisconnectIntegrationTest.testSendEvent
+2018-05-07 18:11:12.752 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.752 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.752 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/ServerDisconnectIntegrationTest.cpp:226: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+[  FAILED  ] ServerDisconnectIntegrationTest.testSendEvent (1 ms)
+[----------] 3 tests from ServerDisconnectIntegrationTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 3 tests, listed below:
+[  FAILED  ] ServerDisconnectIntegrationTest.testConnect
+[  FAILED  ] ServerDisconnectIntegrationTest.testReConnect
+[  FAILED  ] ServerDisconnectIntegrationTest.testSendEvent
+
+ 3 FAILED TESTS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"ServerDisconnectIntegrationTest" end time: May 07 11:11 PDT
+"ServerDisconnectIntegrationTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/8 Testing: SpeechSynthesizerIntegrationTest
+6/8 Test: SpeechSynthesizerIntegrationTest
+Command: "/home/wma/sdk-folder/sdk-build/Integration/test/SpeechSynthesizerIntegrationTest" "/home/wma/sdk-folder/sdk-build/Integration/AlexaClientSDKConfig.json" "/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/inputs"
+Directory: /home/wma/sdk-folder/sdk-build/Integration/test
+"SpeechSynthesizerIntegrationTest" start time: May 07 11:11 PDT
+Output:
+----------------------------------------------------------
+2018-05-07 18:11:12.761 [  1] I sdkVersion: 1.7.1
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from SpeechSynthesizerTest
+[ RUN      ] SpeechSynthesizerTest.handleOneSpeech
+2018-05-07 18:11:12.762 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.762 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.762 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/SpeechSynthesizerIntegrationTest.cpp:307: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] SpeechSynthesizerTest.handleOneSpeech (0 ms)
+[ RUN      ] SpeechSynthesizerTest.handleMultipleConsecutiveSpeaks
+2018-05-07 18:11:12.762 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.762 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.762 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/SpeechSynthesizerIntegrationTest.cpp:307: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] SpeechSynthesizerTest.handleMultipleConsecutiveSpeaks (0 ms)
+[ RUN      ] SpeechSynthesizerTest.bargeInOnOneSpeech
+2018-05-07 18:11:12.762 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.762 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.762 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/SpeechSynthesizerIntegrationTest.cpp:307: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] SpeechSynthesizerTest.bargeInOnOneSpeech (0 ms)
+[ RUN      ] SpeechSynthesizerTest.bargeInOnMultipleSpeaksAtTheBeginning
+2018-05-07 18:11:12.762 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.762 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.762 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/SpeechSynthesizerIntegrationTest.cpp:307: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] SpeechSynthesizerTest.bargeInOnMultipleSpeaksAtTheBeginning (0 ms)
+[ RUN      ] SpeechSynthesizerTest.bargeInOnMultipleSpeaksInTheMiddle
+2018-05-07 18:11:12.763 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.763 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.763 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/SpeechSynthesizerIntegrationTest.cpp:307: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] SpeechSynthesizerTest.bargeInOnMultipleSpeaksInTheMiddle (1 ms)
+[ RUN      ] SpeechSynthesizerTest.multiturnScenario
+2018-05-07 18:11:12.763 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.763 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.763 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/SpeechSynthesizerIntegrationTest.cpp:307: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] SpeechSynthesizerTest.multiturnScenario (0 ms)
+[ RUN      ] SpeechSynthesizerTest.handleNoSpeakDirectives
+2018-05-07 18:11:12.763 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.763 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.763 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/SpeechSynthesizerIntegrationTest.cpp:307: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] SpeechSynthesizerTest.handleNoSpeakDirectives (0 ms)
+[ RUN      ] SpeechSynthesizerTest.handleNoDirectives
+2018-05-07 18:11:12.763 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.763 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.763 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/SpeechSynthesizerIntegrationTest.cpp:307: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] SpeechSynthesizerTest.handleNoDirectives (0 ms)
+[----------] 8 tests from SpeechSynthesizerTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 8 tests, listed below:
+[  FAILED  ] SpeechSynthesizerTest.handleOneSpeech
+[  FAILED  ] SpeechSynthesizerTest.handleMultipleConsecutiveSpeaks
+[  FAILED  ] SpeechSynthesizerTest.bargeInOnOneSpeech
+[  FAILED  ] SpeechSynthesizerTest.bargeInOnMultipleSpeaksAtTheBeginning
+[  FAILED  ] SpeechSynthesizerTest.bargeInOnMultipleSpeaksInTheMiddle
+[  FAILED  ] SpeechSynthesizerTest.multiturnScenario
+[  FAILED  ] SpeechSynthesizerTest.handleNoSpeakDirectives
+[  FAILED  ] SpeechSynthesizerTest.handleNoDirectives
+
+ 8 FAILED TESTS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"SpeechSynthesizerIntegrationTest" end time: May 07 11:11 PDT
+"SpeechSynthesizerIntegrationTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/8 Testing: AlertsIntegrationTest
+7/8 Test: AlertsIntegrationTest
+Command: "/home/wma/sdk-folder/sdk-build/Integration/test/AlertsIntegrationTest" "/home/wma/sdk-folder/sdk-build/Integration/AlexaClientSDKConfig.json" "/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/inputs"
+Directory: /home/wma/sdk-folder/sdk-build/Integration/test
+"AlertsIntegrationTest" start time: May 07 11:11 PDT
+Output:
+----------------------------------------------------------
+2018-05-07 18:11:12.774 [  1] I sdkVersion: 1.7.1
+[==========] Running 11 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 11 tests from AlertsTest
+[ RUN      ] AlertsTest.handleOneTimerWithLocalStop
+2018-05-07 18:11:12.775 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.775 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.775 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlertsIntegrationTest.cpp:252: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlertsTest.handleOneTimerWithLocalStop (0 ms)
+[ RUN      ] AlertsTest.handleMultipleTimersWithLocalStop
+2018-05-07 18:11:12.775 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.775 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.775 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlertsIntegrationTest.cpp:252: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlertsTest.handleMultipleTimersWithLocalStop (0 ms)
+[ RUN      ] AlertsTest.stealChannelFromActiveAlert
+2018-05-07 18:11:12.775 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.775 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.775 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlertsIntegrationTest.cpp:252: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlertsTest.stealChannelFromActiveAlert (0 ms)
+[ RUN      ] AlertsTest.DisconnectAndReconnectBeforeLocalStop
+2018-05-07 18:11:12.775 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.775 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.775 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlertsIntegrationTest.cpp:252: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlertsTest.DisconnectAndReconnectBeforeLocalStop (0 ms)
+[ RUN      ] AlertsTest.DisconnectAndReconnect
+2018-05-07 18:11:12.775 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.775 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.775 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlertsIntegrationTest.cpp:252: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlertsTest.DisconnectAndReconnect (1 ms)
+[ RUN      ] AlertsTest.RemoveAllAlertsBeforeAlertIsActive
+2018-05-07 18:11:12.776 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.776 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.776 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlertsIntegrationTest.cpp:252: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlertsTest.RemoveAllAlertsBeforeAlertIsActive (0 ms)
+[ RUN      ] AlertsTest.cancelAlertBeforeItIsActive
+2018-05-07 18:11:12.776 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.776 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.776 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlertsIntegrationTest.cpp:252: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlertsTest.cancelAlertBeforeItIsActive (0 ms)
+[ RUN      ] AlertsTest.RemoveStorageBeforeAlarmIsSet
+2018-05-07 18:11:12.776 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.776 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.776 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlertsIntegrationTest.cpp:252: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlertsTest.RemoveStorageBeforeAlarmIsSet (0 ms)
+[ RUN      ] AlertsTest.UserShortUnrelatedBargeInOnActiveTimer
+2018-05-07 18:11:12.776 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.776 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.776 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlertsIntegrationTest.cpp:252: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlertsTest.UserShortUnrelatedBargeInOnActiveTimer (0 ms)
+[ RUN      ] AlertsTest.UserSpeakingWhenAlertShouldBeActive
+2018-05-07 18:11:12.776 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.776 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.776 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlertsIntegrationTest.cpp:252: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlertsTest.UserSpeakingWhenAlertShouldBeActive (0 ms)
+[ RUN      ] AlertsTest.handleOneTimerWithVocalStop
+2018-05-07 18:11:12.776 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.776 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.776 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AlertsIntegrationTest.cpp:252: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AlertsTest.handleOneTimerWithVocalStop (0 ms)
+[----------] 11 tests from AlertsTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 11 tests, listed below:
+[  FAILED  ] AlertsTest.handleOneTimerWithLocalStop
+[  FAILED  ] AlertsTest.handleMultipleTimersWithLocalStop
+[  FAILED  ] AlertsTest.stealChannelFromActiveAlert
+[  FAILED  ] AlertsTest.DisconnectAndReconnectBeforeLocalStop
+[  FAILED  ] AlertsTest.DisconnectAndReconnect
+[  FAILED  ] AlertsTest.RemoveAllAlertsBeforeAlertIsActive
+[  FAILED  ] AlertsTest.cancelAlertBeforeItIsActive
+[  FAILED  ] AlertsTest.RemoveStorageBeforeAlarmIsSet
+[  FAILED  ] AlertsTest.UserShortUnrelatedBargeInOnActiveTimer
+[  FAILED  ] AlertsTest.UserSpeakingWhenAlertShouldBeActive
+[  FAILED  ] AlertsTest.handleOneTimerWithVocalStop
+
+11 FAILED TESTS
+  YOU HAVE 1 DISABLED TEST
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"AlertsIntegrationTest" end time: May 07 11:11 PDT
+"AlertsIntegrationTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/8 Testing: AudioPlayerIntegrationTest
+8/8 Test: AudioPlayerIntegrationTest
+Command: "/home/wma/sdk-folder/sdk-build/Integration/test/AudioPlayerIntegrationTest" "/home/wma/sdk-folder/sdk-build/Integration/AlexaClientSDKConfig.json" "/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/inputs"
+Directory: /home/wma/sdk-folder/sdk-build/Integration/test
+"AudioPlayerIntegrationTest" start time: May 07 11:11 PDT
+Output:
+----------------------------------------------------------
+2018-05-07 18:11:12.787 [  1] I sdkVersion: 1.7.1
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from AudioPlayerTest
+[ RUN      ] AudioPlayerTest.SingASong
+2018-05-07 18:11:12.788 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.788 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.788 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioPlayerIntegrationTest.cpp:254: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioPlayerTest.SingASong (0 ms)
+[ RUN      ] AudioPlayerTest.FlashBriefing
+2018-05-07 18:11:12.788 [  1] E ConfigurationNode:initializeFailed:reason=parseFailure,offset=6883,message=Missing a comma or '}' after an object member.
+2018-05-07 18:11:12.788 [  1] E AlexaClientSdkInit:initializeFailed:reason=ConfigurationNode\:\:initializeFailed
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/SDKTestContext.cpp:59: Failure
+Value of: AlexaClientSDKInit::initialize(streams)
+  Actual: false
+Expected: true
+2018-05-07 18:11:12.788 [  1] E AlexaClientSdkInit:initializeError:reason=notInitialized
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/AuthDelegateTestContext.cpp:71: Failure
+Value of: m_sdkTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/src/ACLTestContext.cpp:98: Failure
+Value of: m_authDelegateTestContext
+  Actual: false
+Expected: true
+/home/wma/sdk-folder/sdk-source/avs-device-sdk/Integration/test/AudioPlayerIntegrationTest.cpp:254: Failure
+Value of: m_context
+  Actual: false
+Expected: true
+[  FAILED  ] AudioPlayerTest.FlashBriefing (0 ms)
+[----------] 2 tests from AudioPlayerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] AudioPlayerTest.SingASong
+[  FAILED  ] AudioPlayerTest.FlashBriefing
+
+ 2 FAILED TESTS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"AudioPlayerIntegrationTest" end time: May 07 11:11 PDT
+"AudioPlayerIntegrationTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 07 11:11 PDT
+
+Integration = 150.68 sec
+

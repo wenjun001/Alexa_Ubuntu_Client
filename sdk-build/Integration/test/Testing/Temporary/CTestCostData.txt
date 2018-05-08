@@ -1,0 +1,17 @@
+AlexaAuthorizationDelegateTest 0 0
+AlexaCommunicationsLibraryTest 0 0
+AlexaDirectiveSequencerLibraryTest 0 0
+AudioInputProcessorIntegrationTest 0 0
+ServerDisconnectIntegrationTest 0 0
+SpeechSynthesizerIntegrationTest 0 0
+AlertsIntegrationTest 0 0
+AudioPlayerIntegrationTest 0 0
+---
+AlexaAuthorizationDelegateTest
+AlexaCommunicationsLibraryTest
+AlexaDirectiveSequencerLibraryTest
+AudioInputProcessorIntegrationTest
+ServerDisconnectIntegrationTest
+SpeechSynthesizerIntegrationTest
+AlertsIntegrationTest
+AudioPlayerIntegrationTest
